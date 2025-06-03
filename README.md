@@ -9,7 +9,7 @@ The system uses a Convolutional Neural Network (CNN) to classify audio speech sa
 
 ## Dataset
 
-The project uses the [RAVDESS (Ryerson Audio-Visual Database of Emotional Speech and Song)](https://zenodo.org/record/1188976) dataset.
+The project uses the [RAVDESS (Ryerson Audio-Visual Database of Emotional Speech )](https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio) dataset.
 
 - Each audio file is a short utterance spoken by actors expressing different emotions.
 - Only the speech portion is used for emotion classification.
@@ -34,17 +34,6 @@ The project uses the [RAVDESS (Ryerson Audio-Visual Database of Emotional Speech
 - Standardized inputs (zero-mean, unit variance)
 - CNN architecture with Conv2D, MaxPooling, Dropout, and Dense layers
 
-## Requirements
-
-- Python 3.7+
-- Google Colab (recommended)
-- Libraries:
-  - librosa
-  - numpy
-  - scikit-learn
-  - matplotlib
-  - tensorflow
-
 ## How to Run
 
 1. Download and unzip the RAVDESS dataset
@@ -53,7 +42,4 @@ The project uses the [RAVDESS (Ryerson Audio-Visual Database of Emotional Speech
 4. Train the CNN model using the extracted features
 5. Evaluate the model on test data
 
-### Training the Model
-
-```python
-model.fit(X_train, y_train, epochs=50, batch_size=32, validation_data=(X_test, y_test))
+### Thank you!
